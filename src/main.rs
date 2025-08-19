@@ -1,5 +1,5 @@
-use clap::{Command, Arg};
 use clap::ColorChoice;
+use clap::{Arg, Command};
 use blkrs::run_lsblk;
 
 fn main() {
