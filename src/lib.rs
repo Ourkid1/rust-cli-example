@@ -7,14 +7,13 @@ fn run_command(command: &str) -> String {
         Ok(output) => {
             let stdout = String::from_utf8_lossy(&output.stdout);
             stdout.to_string()
-        },
+        }
         Err(error) => {
             println!("Command failed: {command}");
             eprintln!("error: {}", error);
             "".to_string()
         }
     }
-
 }
 
 pub fn run_lsblk(device: &str) -> serde_json::Value {
