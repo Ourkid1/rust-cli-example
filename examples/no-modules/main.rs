@@ -11,8 +11,7 @@ fn main() {
                 .short('d')
                 .long("device")
                 .value_name("DEVICE")
-                .help("Device name to query")
-                .takes_value(true), // optional depending on clap version
+                .help("Device name to query"),
         )
         .get_matches();
 
