@@ -1,6 +1,6 @@
+use blkrs::run_lsblk;
 use clap::ColorChoice;
 use clap::{Arg, Command};
-use blkrs::run_lsblk;
 
 fn main() {
     let matches = Command::new("lsblk")
