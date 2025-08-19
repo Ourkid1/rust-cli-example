@@ -2,7 +2,7 @@ use blkrs::run_lsblk;
 use clap::ColorChoice;
 use clap::{Arg, Command};
 use serde_json;
-
+// This is a CI test
 fn main() {
     let matches = Command::new("lsblk")
         .version("0.0.1")
